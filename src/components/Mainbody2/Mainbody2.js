@@ -65,6 +65,35 @@ class AllExercises extends Component {
              
     }
 
+
+    test(){
+
+        var options = {
+            method: 'GET',
+            url: 'https://covid-19-data.p.rapidapi.com/help/countries',
+            headers: {
+              'x-rapidapi-key': '92e00d3476msh9086087f266cc20p1d4d74jsn45214a2fcb36',
+              'x-rapidapi-host': 'covid-19-data.p.rapidapi.com'
+            }
+          };
+          
+          axios.request(options).then(function (response) {
+              console.log(response.data);
+          }).catch(function (error) {
+              
+            if(error.response){
+                console.log("sooooo"+ error.response)
+            }
+
+            else if(error.request){
+              
+               console.log("soooo whyy"+error.request)
+            }
+          });
+
+
+    }
+
     render() {
 
            let b = null
@@ -163,6 +192,7 @@ class AllExercises extends Component {
                 <h2 className="text-center">Intermediate Level Workout Plan</h2> 
                   
                   <div >
+                      <button onClick={this.test.bind(this)}>Test</button>
                   {b}
                   </div>
             </div>
