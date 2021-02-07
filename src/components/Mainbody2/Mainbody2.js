@@ -39,7 +39,14 @@ class AllExercises extends Component {
 
         //axios.get('http://localhost:8000/exercises/')
 
-        axios.get('http://[2605:fd00:4:1001:f816:3eff:fe55:93ce]:8000/exercises/')
+
+        var options = {
+            method: 'GET',
+            url: 'http://[2605:fd00:4:1001:f816:3eff:fe55:93ce]:8000/exercises/',
+            
+          };
+
+        axios.request(options)
 
          .then((res)=>{
                
