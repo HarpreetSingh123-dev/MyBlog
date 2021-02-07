@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/navbar/Navbar'
+import Mainbody from'./components/Mainbody/Mainbody'
+import Mainbody3 from './components/Mainbody3/Mainbody3'
+import Main from './components/Mainbody2/Main'
+import Shopping from './Shopping-Cart/Landing-Display'
+import Mainbody4 from './components/Mainbody4/Mainbody4' 
+class App extends Component {
+render() {
+return (
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<div>
+
+<Navbar></Navbar>
+<Mainbody></Mainbody>
+<Mainbody3></Mainbody3>
+<Main></Main>
+<Shopping></Shopping>
+<Mainbody4></Mainbody4>
+
+</div>
+);
+
+
+
 }
+
+}
+
+
 
 export default App;

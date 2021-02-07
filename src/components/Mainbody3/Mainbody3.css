@@ -1,0 +1,220 @@
+.Main-Body-Three .row img{
+       width: 100%;
+       box-shadow: 1px 1px 1px 1px grey;
+       transition: transform 0.5s;
+       
+}
+
+.Main-Body-Three .y:hover img{
+   border: 4px solid gray;;
+   box-shadow: 0px 0px 0px 0px ;
+   
+}
+
+.Main-Body-Three{
+    background-color:  #F5F5F5;
+}
+
+.Main-Body-Three hr{
+    border: 0;
+    height: 2px;
+    width: 70%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.Main-Body-Three .y:hover.y img{
+    transform:scale(1.07,1.07);
+    transition: transform ease 0.7s;
+    
+}
+
+  .Main-Body-Three h5{
+      color: white;
+  }  
+ .Main-Body-Three .h{
+
+    position: relative;
+    top: -100px;
+    color: white;
+    opacity: 0;
+}
+
+/*some cool stuff below*/
+.Main-Body-Three .y:hover .h {
+    opacity: 1;
+    transition: opacity ease-out 250ms;
+    z-index: +11;
+
+}
+
+.Main-Body-Three .y:hover img {
+    background: rgba(0,0,0,1.0);
+    
+}
+
+
+
+.Main-Body-Three .row h5:hover{
+
+    transform:scale(1.07,1.07);
+    transition: transform ease-out 0.7s;
+    cursor: pointer;
+}
+.Main-Body-Three{
+
+    position: relative;
+    top: 0px;
+}
+
+.y{
+    position: relative;
+    z-index: +8;
+}
+
+.y::before{
+
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 4.25em;
+    left: 1.25em;
+    right: 1.25em;
+   
+    transform: scale(0,1);  
+    transition: transform ease-out 250ms;
+}
+
+.y:hover::before{
+    z-index: +8;
+transform: scale(1.05,1);
+border-top: 1.5px solid white;
+border-bottom: 1.5px solid white;
+
+
+}
+
+.Main-Body-Three .link{
+    text-decoration: none;
+}
+
+.y::after{
+
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 4.25em;
+    left: 1.25em;
+    right: 1.25em;
+   
+    transform: scale(1,0);  
+    transition: transform ease-out 250ms;
+}
+
+.y:hover::after{
+    transform: scale(1,1.05);
+    border-left: 1.5px solid white;
+    border-right: 1.5px solid white;
+   
+}
+.Main-Body-Three .row{
+
+position: relative;
+top: 80px;
+}
+
+@media(min-width:500px) and (max-width:599px){
+
+    
+    .Main-Body-Three{
+
+        position: relative;
+        top: 320px;
+    }
+
+
+}
+
+@media(min-width:500px) and (max-width:575px){
+
+    .Main-Body-Three .row img:hover{
+
+   
+        transform:scale(1.029,1.029);
+        transition: transform 0.7s;
+       
+        cursor: pointer;
+        
+        }
+    
+
+       
+
+
+}
+
+@media(min-width:600px) and (max-width:767px){
+
+    .Main-Body-Three{
+
+        position: relative;
+        top: 360px;
+    }
+
+}
+
+@media(min-width:765px) and (max-width:964px){
+
+    .Main-Body-Three{
+
+        position: relative;
+        top: 110px;
+    }
+
+}
+
+@media(min-width:500px) and (max-width:575px){
+
+    .Main-Body-Three .row img{
+        position: relative;
+        margin-top: 20px;
+        height: 450px;
+        width: 80%;
+        left: 10%;
+    }
+
+    .y::before{
+
+        content: '';
+        position: absolute;
+        top: 2.25em;
+        bottom: 4.25em;
+        left: 5.25em;
+        right: 5.25em;
+       
+        transform: scale(0,1);  
+        transition: transform ease-out 250ms;
+    }
+
+    .y:hover::before{
+        z-index: +8;
+    transform: scale(1.12,1);
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+    
+    }
+
+    .y::after{
+
+        content: '';
+        position: absolute;
+        top: 2.25em;
+        bottom: 4.25em;
+        left: 4.70em;
+        right: 4.70em;
+       
+        transform: scale(1,0);  
+        transition: transform ease-out 250ms;
+    }
+
+}
+
