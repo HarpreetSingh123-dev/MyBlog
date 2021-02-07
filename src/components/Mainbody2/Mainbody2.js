@@ -57,7 +57,7 @@ class AllExercises extends Component {
 
                  else if(err.request){
                    
-                    console.log(err.request)
+                    console.log("whyyyy"+err.request)
                  }
 
             });
