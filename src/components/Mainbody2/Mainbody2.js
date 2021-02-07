@@ -49,7 +49,18 @@ class AllExercises extends Component {
               
                 }
              
-            })  .catch((err) =>(console.log(err)));
+            })  .catch((err) =>{
+
+                 if(err.response){
+                     console.log("error response"+ err.response)
+                 }
+
+                 else if(err.request){
+                   
+                    console.log(err.request)
+                 }
+
+            });
 
              
     }
